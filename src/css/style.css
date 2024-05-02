@@ -1259,15 +1259,19 @@ align-items: center;
 .footer__payment {
   display: flex;
   flex-direction: row;
-  max-width: 480px;
+  width: 100%;
   gap:0.6rem;
   padding:12px;
-  /* background-color: #EB4928; */
+  background-color: #EB4928;
   align-items: center;
 }
 
+.footer__payment svg:nth-child(1){
+  width:9rem;
+}
+
 @media screen and (max-width:500px){
-  .footer__payment svg{
+  .footer__payment {
     background-color: red;
     /* max-width:70px; */
     /* flex-direction: column; */
