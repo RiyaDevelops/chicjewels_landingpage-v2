@@ -441,6 +441,7 @@ header{
   .banner{
       padding: 2rem;
       /* background-color: red; */
+      font-size: small;
   }
 }
 @media screen and (max-width: 375px) {
@@ -774,13 +775,14 @@ section {
   font-size: clamp(2rem, 3rem, 3.4rem);
   font-weight: var(--font-weight-regular);
   text-transform: uppercase;
+  
   /* margin-top:2.5rem; */
 }
 
 @media screen and (max-width:500px){
   #best-sellers__title{
-    font-size: 2rem;
-    flex: 1 1;
+    font-size: 1.5rem;
+    flex: 1 1 1.4rem;
   }
 }
 
