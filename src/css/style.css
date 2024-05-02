@@ -1260,19 +1260,27 @@ align-items: center;
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap:0.6rem;
+  gap:1rem;
   padding:12px;
-  background-color: #EB4928;
+  /* background-color: #EB4928; */
   align-items: center;
 }
-
+.footer__payment img {
+  width:50px;
+  height: 30px;
+}
 .footer__payment svg:nth-child(1){
   width:9rem;
 }
 
+.flag{
+  width:40px;
+  height:40px;
+}
+
 @media screen and (max-width:500px){
   .footer__payment {
-    background-color: red;
+    /* background-color: blue; */
     /* max-width:70px; */
     /* flex-direction: column; */
   }
@@ -1286,10 +1294,7 @@ align-items: center;
   text-transform: uppercase;
 }
 
-.flag{
-  width:30px;
-  height:30px;
-}
+
 /* ----------> NEWS LETTER STYLING BEGINS < -------====== */
 .newsletter{
   /* assigned the grid item of newsletter */
