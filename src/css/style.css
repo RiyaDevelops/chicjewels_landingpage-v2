@@ -440,6 +440,7 @@ header{
 @media screen and (max-width: 500px) {
   .banner{
       padding:2rem 0;
+      background-color: red;
   }
 }
 @media screen and (max-width: 375px) {
