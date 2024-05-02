@@ -1287,14 +1287,12 @@ align-items: center;
   height:auto;
 }
 
-
-/* .payment-text{
-  font-size: 0.9rem;
+ 
+ .payment-text{
+  font-size: 0.7rem;
   font-weight: var(--font-weight-semibold);
-  display: inline;
-  text-wrap: nowrap;
   text-transform: uppercase;
-} */
+} 
 
 
 /* ----------> NEWS LETTER STYLING BEGINS < -------====== */
