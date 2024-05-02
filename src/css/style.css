@@ -439,8 +439,8 @@ header{
 
 @media screen and (max-width: 500px) {
   .banner{
-      padding:2rem 0;
-      background-color: red;
+      padding: 2rem;
+      /* background-color: red; */
   }
 }
 @media screen and (max-width: 375px) {
@@ -775,6 +775,13 @@ section {
   font-weight: var(--font-weight-regular);
   text-transform: uppercase;
   /* margin-top:2.5rem; */
+}
+
+@media screen and (max-width:500px){
+  #best-sellers__title{
+    font-size: 2rem;
+    flex: 1 1;
+  }
 }
 
 .jewelry .heading{
