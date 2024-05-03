@@ -896,6 +896,7 @@ section {
 
 .best-seller{
   /* background-color:var(--pastel-blue); */
+  padding: 7rem 0 5rem 0;
 }
 
 .header{
@@ -1056,7 +1057,7 @@ section {
 
 .about-us{
   /* background-color: orange; */
-  /* padding: 7rem 0; */
+  padding: 9rem 0 4rem 0;
 }
 
 .about-us .container {
@@ -1135,12 +1136,21 @@ section {
 }
 
 .about-us__btn .btn{
- flex: 1;
+ /* flex: 1; */
  /* take all available space */
 }
 /* ============== --------- > ABOUT -US MEDIA QUERIES <-------- ========== */
+@media screen and (max-width:978px){
+  .about-us{
+    padding: 2rem 0 4rem 0;
+  }
+
+}
+
+
 
 @media screen and (max-width:780px){
+ 
   .about-us .container{
     display: flex;
     flex-direction: column-reverse;
@@ -1194,7 +1204,7 @@ padding:9rem 0;
 
 @media screen and (max-width:500px){
   .testimonials{
-    padding:4rem 0;
+    padding:4rem 0 7rem 0;
   }
 }
 
