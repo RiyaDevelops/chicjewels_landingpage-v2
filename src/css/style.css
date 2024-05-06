@@ -56,6 +56,7 @@ body{
     font-family: var(--font-family);
     color: black;
     cursor: pointer;
+    overflow-x: hidden;
   }
 
 .container{
@@ -285,7 +286,6 @@ header{
 }
 
 .menu{
-    /* background-color: red; */
     width:30px;
     cursor: pointer;
     /* don't want in desktop view */
@@ -340,6 +340,7 @@ header{
         transition: var(--transition);  
         /* margin-bottom:8rem; */
         padding-bottom:1rem;
+        /* background: #a0d8ef; */
     }
     
     .navbar-open .navbar {
@@ -348,7 +349,13 @@ header{
         pointer-events: auto;
         visibility: visible;
         transition: all 0.4s ease-in-out;
+        /* background-color: #b6acd4; */
   
+    }
+
+    .navbar-close .navbar {
+      /* background-color: #8ed451; */
+      opacity: 0;
     }
 
     .navbar .nav__link{
@@ -768,6 +775,7 @@ section {
 
 .jewelry{ 
   padding:30px 0; 
+  background-color: #b6acd4;
 
 }
 
@@ -1056,7 +1064,7 @@ section {
 
 
 .about-us{
-  /* background-color: orange; */
+  background-color: orange;
   padding: 9rem 0 4rem 0;
 }
 
@@ -1140,7 +1148,7 @@ section {
  /* take all available space */
 }
 /* ============== --------- > ABOUT -US MEDIA QUERIES <-------- ========== */
-@media screen and (max-width:978px){
+@media screen and (max-width:780px){
   .about-us{
     padding: 2rem 0 4rem 0;
   }
@@ -1198,13 +1206,13 @@ section {
 /* ============== -------- > TESTIMONIAL Styling Begins <-------  ============== */
 .testimonials{
 padding:9rem 0;
-/* background-color: pink; */
+background-color: pink;
 /* padding bottom larger than others */
 }
 
 @media screen and (max-width:500px){
   .testimonials{
-    padding:4rem 0 7rem 0;
+    padding:4rem 0;
   }
 }
 
