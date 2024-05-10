@@ -182,7 +182,7 @@ header{
 .navbar .nav__link{
     text-decoration: none;
     color:black;
-    font-size: clamp(1rem);
+    font-size: clamp(5px, 18px, 18px);
     font-weight: var(--font-weight-regular);
     text-transform: uppercase;
     margin-left:10px;
@@ -195,6 +195,18 @@ header{
 
 }
 
+/* SMALLER DEVICES FOR NAVBAR  */
+@media screen and (max-width: 390px){
+  .navbar .nav__link{
+    font-size: clamp(0.5rem, 1vw, 1px);
+    /* background-color: red; */
+    color:green;    
+  }
+  .nav__link i[class^="fa"]{
+    font-size: 0.2rem;
+  }
+  
+}
 
 .nav__link:hover{
     color:var(--accent);
@@ -222,11 +234,13 @@ header{
     color:black;
 }
 
-.nav__link .fa-caret-right{
-    border: 2px solid green;
-    font-size: 1.1rem;
+.nav__link i[class^="fa"]{
+    font-size: clamp(1.8rem, 1.8rem, 3vw);
+      /* display: none; */
+    margin-right:3.2rem;
+    color: var(--main);
     display: none;
-    margin-right:3rem
+
 }
 
  
@@ -236,6 +250,7 @@ header{
   /* background-color: aqua; */
   display: flex;
   padding: 0 0.4rem;
+  align-items: center;
 
   /* justify-content: space-between; */
 }
@@ -272,17 +287,16 @@ header{
   text-align: center;
   justify-content: center;
 }
-.fa-heart{
-  /* color:var(--accent); */
-}
-.header-cta__bag{
-  /* background-color: red; */
-}
+/* .fa-heart{
+  color:var(--accent); 
+} */
+
+
 
 .header-cta__bag i[class^="fa"]{
     color:var(--accent);
     font-size: 1.6rem;
-    /* background-color: #04fafa; */
+    align-items: center;
 }
 
 .menu{
@@ -299,6 +313,8 @@ header{
     padding:0.1rem;
     transition:  0.6s ease-in-out;
 }
+/* HAVE TO MAKE THE SCROLLING TRNAAIITON SLOWER */
+
 
 /* ==================================== > Begin:  Media Queries: NAVBAR < ================================= */
 
@@ -364,10 +380,6 @@ header{
         width:100%;
         height: 100%;
         text-align: left;
-        /* top margin 2 rem  left right bottom 0 */
-        margin: 1.2rem 0 0;
-        padding: 0.5rem;
-        /* font-size:1.4rem; */
         font-weight: var(--font-weight-regular);
         font-size: 1.5rem;
         color:black;
@@ -376,6 +388,7 @@ header{
         background-size: cover;
         background-position: center; /* Center the background image */
         align-items: right;
+        padding-top:35px;
     }
      
     .nav__link:hover{
@@ -391,57 +404,12 @@ header{
         display: block;
     }
 
-    .nav__link .fa-caret-right{
-        display: inline-flex;
-        justify-content: flex-end;
-        color: var(--main);
-        border:none;
-        align-items: center;
-        font-size: 2rem;
-    }
-
-    .nav__link:nth-child(1){
-      background-image: url(../../img/);
-      background-size: cover;
-      background-position: center; /* Center the background image */
-      /* align-items: right; */
-      background-size: 30%;
-
-    }
-
-    .nav__link:nth-child(2){
-      /* background-image: url(../../img/product7.png);      */
-       background-size: cover;
-       background-size: 30%;
-    }
-
-    .nav__link:nth-child(3){
-      /* background-image: url(../../img/product3.png); */
-      background-size: cover;
-      background-size: 30%;
-    }
-
-    .nav__link:nth-child(4){
-      /* background-image: url(../../img/product__necklace--gold.png); */
-      background-size: cover;
-      background-position: center; /* Center the background image */
-      align-items: right;
-    }
    
-    .nav__link:nth-child(4){
-      /* background-image: url(../../img/about-us-image.jpeg); */
-      background-size: cover;
-      background-position: center; /* Center the background image */
-      align-items: right;
-    }
-
-    .nav__link:nth-child(5){
-      /* background-image: url(../../img/model-img.png); */
-      background-size: cover;
-      background-position: center; /* Center the background image */
-      align-items: right;
-    }
+.nav__link i[class^="fa"]{
+  display: inline-block;
 }
+
+  }
 
 
 @media screen and (max-width: 500px) {
@@ -450,7 +418,39 @@ header{
       /* background-color: red; */
       font-size: small;
   }
+  .navbar .nav__link {
+    padding-top:10px;
+    font-size: 17px;
+  }
+
+  .nav__link i[class^="fa"]{
+    font-size: 1.1rem;
+  }
+  
+
+  
 }
+
+@media screen and (max-width: 450px) {
+  .banner{
+      padding: 2rem;
+      /* background-color: red; */
+      font-size: small;
+  }
+  .navbar .nav__link {
+    padding-top:10px;
+    font-size: 17px;
+  }
+
+  .nav__link i[class^="fa"]{
+    font-size: 1.1rem;
+  }
+  
+
+  
+}
+
+
 @media screen and (max-width: 375px) {
   .logo__img{
     width:25px;
@@ -775,24 +775,22 @@ section {
 
 .jewelry{ 
   padding:30px 0; 
-  background-color: #b6acd4;
+  /* background-color: #b6acd4; */
 
 }
 
  .heading{
-  font-size: clamp(2rem, 3rem, 3.4rem);
-  font-weight: var(--font-weight-regular);
-  text-transform: uppercase;
+    font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: var(--font-weight-regular);
+     text-transform: uppercase;
+     align-items: center;
   
   /* margin-top:2.5rem; */
 }
 
-@media screen and (max-width:500px){
-  #best-sellers__title{
-    font-size: 1.5rem;
-    flex: 1 1 1.4rem;
-  }
-}
+/* @media screen and (max-width:500px){
+ 
+} */
 
 .jewelry .heading{
   text-align: center;
@@ -904,9 +902,30 @@ section {
 
 .best-seller{
   /* background-color:var(--pastel-blue); */
-  padding: 7rem 0 5rem 0;
+  padding: 70px 0  0 0;
+  margin-top:30px;
 }
 
+.best-seller .header{
+  align-items: center;
+  /* background-color: red; */
+  display: flex;
+  text-align: center;
+
+}
+
+.best-seller .heading{
+  /* background-color: #8ed451; */
+   text-wrap: wrap;
+   
+}
+/* 
+
+@media screen  and (max-width:433px){
+  .best-seller .heading{
+      font-size: 9rem;
+  }
+} */
 .header{
   display: flex;
   flex-direction: row;
@@ -914,7 +933,10 @@ section {
   /* border:2px solid green; */
   padding-top:1rem;
   margin-bottom: 2rem;
+  align-items: center;
 }
+
+
 
 /* left and right buttons container div  */
 .carousel__icons {
@@ -924,10 +946,11 @@ section {
   cursor: pointer;
   align-items: center;
   position: relative;
-  /* border: 20px red solid; */
+  /* border: 20px green solid; */
   gap:3rem;
   color:var(--accent);
   margin-right:2rem;
+  margin-bottom: 20px;
 }
 
 .carousel__icons i[class^="fa"]{
@@ -1025,13 +1048,21 @@ section {
   background-color: #EB4928;
 }
 
+.best-seller .heading{
+
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 40px;
+    /* border: 2px solid green; */
+    align-items: center;
+  
+}
 
 /* ================== > BEST SELLER Media Queries: <  --- ======================= */
 
 @media screen and (max-width: 500px){
-  .heading{
+  /* .heading{
     font-size: clamp(1rem, 1.5rem, 3rem);
-  }
+  } */
 }
 
 @media (min-width: 768px) {
@@ -1064,8 +1095,28 @@ section {
 
 
 .about-us{
-  background-color: orange;
-  padding: 9rem 0 4rem 0;
+  /* background-color: orange; */
+  padding: 9rem 0 0rem 0;
+}
+/* small devices */
+@media screen and (max-width:400px){
+  .about-us{
+    padding-top: 10rem;
+    margin-top:40px;
+  }
+  .hero-text__title{
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+
+  .hero-text__description{
+    font-size: 1rem;
+  }
+
+  .nav__link .fa{
+    font-size: 1.1rem;
+  }
+
 }
 
 .about-us .container {
@@ -1206,13 +1257,14 @@ section {
 /* ============== -------- > TESTIMONIAL Styling Begins <-------  ============== */
 .testimonials{
 padding:9rem 0;
-background-color: pink;
+/* background-color: pink; */
 /* padding bottom larger than others */
 }
 
 @media screen and (max-width:500px){
   .testimonials{
     padding:4rem 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -1331,6 +1383,10 @@ align-items: center;
   color: white;
   box-shadow: var(--shadow);
   font-size: clamp(0.4rem,0.8rem, 1rem);
+}
+
+@media screen and (max-width:500px){
+  
 }
 
 .newsletter__heading{
@@ -1452,12 +1508,14 @@ align-items: center;
 
   .newsletter{
     transform: translateY(-21%);
+    margin-top: 20px;
 
   }
   
   .newsletter__form{
     display: block;
     width:100%;
+    /* background-color: #8ed451; */
   }
   
   .newsletter__form .btn{

@@ -26,28 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenu.classList.remove("navbar-open");
             hamburgerIcon.classList.remove("fa-times");
             hamburgerIcon.classList.add("fa-bars");
+            window.scrollTo({ top: offsetTop, behavior: "smooth" }); // Smooth scroll behavior
         });
     });
 });
 
 
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-    
-//     const navLink = document.querySelector(".nav__link");
-//     const mobileMenu = document.querySelector(".mobile");
-
-
-// navLink.addEventListener('click', () => {
-//     mobileMenu.classList.add("navbar-close");
-//     hamburgerIcon.classList.remove("fa-times");
-
-
-// });
-
-
-// });
 
 
 // Back to Top Button 
