@@ -1260,6 +1260,15 @@ padding:9rem 0;
 /* background-color: pink; */
 /* padding bottom larger than others */
 }
+.testimonials  .heading{
+  /* background-color: #b6acd4; */
+  margin-bottom: 30px;
+
+}
+/* #testimonial__header{
+  margin-bottom: 20px;
+  background-color: red;
+} */
 
 @media screen and (max-width:500px){
   .testimonials{
