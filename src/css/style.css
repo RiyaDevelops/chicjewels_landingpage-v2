@@ -1265,18 +1265,26 @@ padding:9rem 0;
   margin-bottom: 30px;
 
 }
-/* #testimonial__header{
-  margin-bottom: 20px;
-  background-color: red;
-} */
+
 
 @media screen and (max-width:500px){
   .testimonials{
     padding:4rem 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    /* background-color: #8ed451; */
+  }
+  #testimonial__header{
+    font-size: 1.5rem;
+    margin-top: 0px;
+    /* background-color: red; */
   }
 }
-
+@media screen and (max-width:375px){
+  #testimonial__header{
+    font-size: 1.5rem;
+    /* background-color: red; */
+  }
+}
 /* .testimonials .container{
 } */
 

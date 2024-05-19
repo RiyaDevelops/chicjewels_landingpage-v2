@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Close mobile menu when a navigation link is clicked
+    // Close mobile menu when a navigation link is clicked ninside mobile menu
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             mobileMenu.classList.remove("navbar-open");
