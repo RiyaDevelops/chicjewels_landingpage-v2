@@ -26,8 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenu.classList.remove("navbar-open");
             hamburgerIcon.classList.remove("fa-times");
             hamburgerIcon.classList.add("fa-bars");
-            window.scrollTo({ top: offsetTop, behavior: "smooth" }); // Smooth scroll behavior
-        });
+            const scrollOptions = {
+                top: offsetTop,
+                behavior: "smooth",
+                // higher number slower it scrolls
+                duration: 2000 
+                 };
+            window.scrollTo(scrollOptions);      
+          });
     });
 });
 

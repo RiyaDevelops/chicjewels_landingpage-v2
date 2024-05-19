@@ -1454,6 +1454,8 @@ align-items: center;
   padding:20px;
   /* background-color: red; */
   font-family: var(--font-family);
+   text-indent: 5px;
+   color: black;
   /* Other styles you want to apply */
 }
 
@@ -1520,12 +1522,31 @@ align-items: center;
 }
 }
 
+@media screen and (max-width:657px) {
+ 
+
+  .newsletter{
+   
+    margin-top: 80px;
+
+  }
+  
+  /* .newsletter__form{
+    display: block;
+    width:100%;
+  }
+   */
+ 
+
+
+}
+
 @media screen and (max-width:500px) {
  
 
   .newsletter{
-    transform: translateY(-21%);
-    margin-top: 20px;
+    transform: translateY(-30%);
+    /* margin-top: 20px; */
 
   }
   
@@ -1748,7 +1769,7 @@ align-items: center;
 }
 
 #education__statement{
-  font-size:0.3rem;
+  font-size:0.6rem;
   text-transform: uppercase;
   margin-left: 10px;;
   
