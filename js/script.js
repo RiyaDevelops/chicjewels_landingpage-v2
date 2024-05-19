@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 top: offsetTop,
                 behavior: "smooth",
                 // higher number slower it scrolls
-                duration: 2000 
+                duration: 9000 
                  };
             window.scrollTo(scrollOptions);      
           });
