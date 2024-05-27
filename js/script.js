@@ -6,15 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const hamburgerIcon = document.querySelector(".menu i");
     const navLinks = document.querySelectorAll(".nav__link");
 
-    // Smooth scrolling function
-    function smoothScroll(target) {
-        const targetPosition = target.offsetTop;
-        window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth"
-        });
-    }
-
     // Toggle mobile menu and hamburger icon
     hamburger.addEventListener('click', () => {
         mobileMenu.classList.toggle("navbar-open");
@@ -29,24 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Close mobile menu when a navigation link is clicked inside mobile menu
+    // Close mobile menu when a navigation link is clicked ninside mobile menu
     navLinks.forEach(link => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent default anchor behavior
-
-            const targetId = link.getAttribute("href").substring(1); // Get target section id
-            const targetSection = document.getElementById(targetId); // Get target section element
-
-            // Close mobile menu and toggle hamburger icon
+        link.addEventListener("click", () => {
             mobileMenu.classList.remove("navbar-open");
             hamburgerIcon.classList.remove("fa-times");
             hamburgerIcon.classList.add("fa-bars");
-
-            // Smooth scroll to the target section
-            smoothScroll(targetSection);
-        });
+               
+          });
     });
 });
+
 
 
 
