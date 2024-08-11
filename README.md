@@ -1,5 +1,9 @@
 # chicjewels_landingpage
-# eccomerce landing page 
+# Responsove Eccomerce landing page 
+# High Conversion Landing Page 
+# SEO - keywords , meta description 
+![image](https://github.com/RiyaDevelops/chicjewels_landingpage-v2/assets/101432905/1f9e82b5-992e-481f-954a-0e954096d735)
+
 
 # Resources 
 # blob maker 
