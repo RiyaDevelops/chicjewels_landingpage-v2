@@ -65,7 +65,7 @@ body{
     margin: 0 auto;
     /* 0px top and bottom , left and right margin */
     /* browser will distribute space evenly left and right */
-    padding: 0 1rem;
+    padding: 0 1.2rem;
     /* space on the left and right edge when we minimize screen to  mobile view */
 
 }
@@ -916,7 +916,9 @@ section {
 
 .best-seller .heading{
   /* background-color: #8ed451; */
-   text-wrap: wrap;
+   text-wrap: balance;
+   /* padding: 1rem 1.1rem; */
+   font-size: clamp(1.5rem, 4vw, 3rem);
    
 }
 /* 
@@ -1048,14 +1050,7 @@ section {
   /* background-color: #EB4928; */
 }
 
-.best-seller .heading{
-
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    margin-bottom: 40px;
-    /* border: 2px solid green; */
-    align-items: center;
-  
-}
+/* */
 
 /* ================== > BEST SELLER Media Queries: <  --- ======================= */
 
