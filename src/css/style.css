@@ -7,13 +7,14 @@
 --pastel-blue:#a0d8ef;
 --lemon-yellow:#FFF44F;
 --main:#fbacd4;
---verified-check:#8ed451;
+--verified-check:#2D600E;
+;
 --accent:#b6acd4;
 --accent-2: #EB4928;
 --accent-3:#04fafa;
 --background: #f8f8f8;
 --lightblue: #acd4fb;
---stars: yellow;
+--stars: #5534A7;
 --accent:#b6acd4;
 /* -- Text font weights -- */
 --font-weight-extralight: 100;
@@ -1301,7 +1302,7 @@ cursor: pointer;
 }
 
 .company-star-rating > *{
-color:var(--lemon-yellow);
+color:var(--stars);
 font-weight: var(--font-weight-bold);
 }
 
