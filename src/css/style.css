@@ -9,13 +9,13 @@
 --main:#fbacd4;
 --verified-check:#2D600E;
 ;
---accent:#b6acd4;
+/* --accent:#b6acd4; */
 --accent-2: #EB4928;
 --accent-3:#04fafa;
 --background: #f8f8f8;
 --lightblue: #acd4fb;
 --stars: #5534A7;
---accent:#b6acd4;
+--accent:#7D61CB;
 /* -- Text font weights -- */
 --font-weight-extralight: 100;
 --font-weight-light: 200;
@@ -92,6 +92,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+    color:white;
 
 }
 
@@ -206,7 +207,7 @@ header{
 
 .nav__link:hover{
     color:var(--accent);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-medium);
 }
 .nav__link:last-child{
     margin-right: 0;
@@ -376,7 +377,7 @@ header{
         width:100%;
         height: 100%;
         text-align: left;
-        font-weight: var(--font-weight-regular);
+        font-weight: var(--font-weight-medium);
         font-size: 1.5rem;
         color:black;
         /* border: 2px solid red; */
@@ -389,7 +390,7 @@ header{
      
     .nav__link:hover{
       color:var(--accent);
-      font-family: var(--font-weight-bold);
+      font-family: var(--font-weight-medium);
     }
 
     .nav__link::after{
@@ -522,6 +523,8 @@ section {
     margin-bottom: 16px;
     /* text-wrap:nowrap */
     text-align: left;
+    line-height: 1.4;
+
   }
 
   .hero-text__description{
@@ -530,7 +533,7 @@ section {
     font-size: 1.2rem;
     text-wrap: balance;
     word-spacing: 0.1;
-    line-height: 2.0;
+    line-height: 1.7;
     text-align: left;
     max-width: 90%;
   }
@@ -1698,7 +1701,7 @@ align-items: center;
 
 .footer__links:hover{
   color: var(--accent);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
 }
 
 
