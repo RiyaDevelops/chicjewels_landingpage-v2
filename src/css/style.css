@@ -180,7 +180,7 @@ header{
 
 .navbar .nav__link{
     text-decoration: none;
-    color:black;
+    color:red;
     font-size: clamp(5px, 18px, 18px);
     font-weight: var(--font-weight-regular);
     text-transform: uppercase;
@@ -195,14 +195,13 @@ header{
 }
 
 /* SMALLER DEVICES FOR NAVBAR  */
-@media screen and (max-width: 390px){
+@media screen and (max-width: 395px){
   .navbar .nav__link{
-    font-size: clamp(0.5rem, 1vw, 1px);
-    /* background-color: red; */
-    color:green;    
+    /* font-size: clamp(0.5rem, 1vw, 1px); */
+    color: green;
   }
   .nav__link i[class^="fa"]{
-    font-size: 0.2rem;
+    font-size: 20rem;
   }
   
 }
