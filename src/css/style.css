@@ -186,7 +186,7 @@ header{
     text-transform: uppercase;
     margin-left:10px;
     /* color will be affected by transition */
-    transition: color 0.3s ease-in-out;
+    /* transition: color 0.3s ease-in-out; */
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -205,7 +205,7 @@ header{
 
 .nav__link:hover{
     color:var(--accent);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-regular);
 }
 .nav__link:last-child{
     margin-right: 0;
